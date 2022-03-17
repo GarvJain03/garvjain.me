@@ -17,7 +17,7 @@
   @apply bg-white;
 }
 
-/* Handle on active */
+/* Handle on hover */
 ::-webkit-scrollbar-thumb:active {
   @apply bg-gray-200;
 }
