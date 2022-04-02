@@ -40,7 +40,7 @@ const socials: ISocialIcons["links"] = [
 const Hero: React.FC = () => {
   return (
     <div className="bg-secondary-dark">
-      <div className="container mx-auto flex lg:px-24 px-5 py-12 lg:h-screen md:h-screen md:flex-row flex-col items-center">
+      <div className="container mx-auto flex lg:px-24 px-5 py-12 md:flex-row flex-col items-center">
         <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
           <div className="flex flex-row mb-8 space-x-3">
             {socials.map((social, index) => (

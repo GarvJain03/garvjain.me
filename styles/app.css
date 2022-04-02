@@ -21,3 +21,7 @@
 ::-webkit-scrollbar-thumb:active {
   @apply bg-gray-200;
 }
+
+:root {
+  @apply bg-secondary-dark;
+}

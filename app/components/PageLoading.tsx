@@ -1,6 +1,6 @@
 import React from "react";
 
-const PageLoading = () => {
+const PageLoading: React.FC = () => {
   return <div className="bg-primary-dark">Loading vro</div>;
 };
 

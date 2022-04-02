@@ -12,7 +12,7 @@ import styles from "~/styles/app.css";
 import PageLoading from "~/components/PageLoading";
 
 export const meta: MetaFunction = () => {
-  return { title: "Garv Jain" };
+  return { title: "Garv Jain", description: "Garv Jain's personal website" };
 };
 
 export const links: LinksFunction = () => {
