@@ -2,10 +2,12 @@ import React from 'react'
 import type { NextPage } from 'next'
 import Layout from '../components/Layout/Layout'
 import ContactForm from '../components/Contact/ContactForm'
+import { ToastContainer } from 'react-toastify'
 
 const ContactPage: NextPage = () => {
   return (
     <Layout title="Contact">
+      <ToastContainer />
       <div className="container mx-auto px-5 py-12">
         <div className="mb-12 flex w-full flex-col text-center">
           <h1 className="title-font mb-4 text-4xl font-bold text-white sm:text-5xl">
