@@ -66,7 +66,7 @@ const ContactForm: React.FC = () => {
         Contact Me
       </h1>
       <div className="-m-2 flex flex-wrap">
-        <div className="w-1/2 p-2">
+        <div className="w-full p-2 lg:w-1/2">
           <div className="relative">
             <label htmlFor="name" className="text-sm leading-7 text-gray-600">
               Name
@@ -82,7 +82,7 @@ const ContactForm: React.FC = () => {
             />
           </div>
         </div>
-        <div className="w-1/2 p-2">
+        <div className="w-full p-2 lg:w-1/2">
           <div className="relative">
             <label htmlFor="email" className="text-sm leading-7 text-gray-600">
               Email
@@ -119,7 +119,7 @@ const ContactForm: React.FC = () => {
           type="submit"
           className="mx-2 mt-4 flex w-full items-center justify-center space-x-2 rounded-lg border border-soft-red px-8 py-3 text-white transition duration-200 ease-in-out hover:bg-soft-red active:outline-soft-red"
         >
-          <span className="text-lg font-medium">Submit</span>
+          <span className="text-md font-medium lg:text-lg">Submit</span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-6 w-6"
