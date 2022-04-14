@@ -29,4 +29,7 @@
     @apply bg-secondary-dark;
   }
   
+  .link {
+    @apply underline hover:text-white transition duration-200 ease-in-out cursor-pointer decoration-2 underline-offset-2;
+  }
 }
