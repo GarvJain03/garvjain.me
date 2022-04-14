@@ -1,8 +1,9 @@
 import React from 'react'
+import type { NextPage } from 'next'
 import ComingSoon from '../components/ComingSoon'
 import Layout from '../components/Layout/Layout'
 
-const blog = () => {
+const BlogPage: NextPage = () => {
   return (
     <Layout title="Blog">
       <ComingSoon />
@@ -10,4 +11,4 @@ const blog = () => {
   )
 }
 
-export default blog
+export default BlogPage
