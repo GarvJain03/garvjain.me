@@ -7,14 +7,7 @@ import {
   FaInstagram,
 } from 'react-icons/fa'
 
-interface ISocialIcons {
-  links: {
-    icon: React.ReactFragment
-    url: string
-  }[]
-}
-
-const socials: ISocialIcons['links'] = [
+const socials: { icon: React.ReactFragment; url: string }[] = [
   {
     icon: <FaGithub />,
     url: 'https://github.com/GarvJain03',
@@ -39,7 +32,7 @@ const socials: ISocialIcons['links'] = [
 
 const Hero: React.FC = () => {
   return (
-    <div className="container mx-auto flex flex-col items-center px-5 py-12 md:flex-row lg:px-24">
+    <div className=" mx-auto flex flex-col items-center px-5 pt-12 md:flex-row lg:px-24">
       <div className="mb-16 flex flex-col items-center text-center md:mb-0 md:w-1/2 md:items-start md:pr-16 md:text-left lg:flex-grow lg:pr-24">
         <div className="mb-8 flex flex-row space-x-3">
           {socials.map((social, index) => (
@@ -57,14 +50,14 @@ const Hero: React.FC = () => {
           Hi, I'm Garv
         </h2>
 
-        <p className="mt-4 text-xl text-gray-400">
+        <p className="mt-4 text-justify text-xl leading-8 text-gray-400">
           A creative developer who loves to write code and solve real world
-          problems.
+          problems. I'm a currently attending{' '}
+          <a className="link">Delhi Public School, RK Puram</a> as a high school
+          sophomore where I'm a part of <a className="link">Exun Clan</a>, the
+          tech club and <a className="link">RoboKnights</a>, the robotics club
+          of the school.
         </p>
-
-        <button className="mt-8 rounded-full border border-soft-red px-8 py-3 text-xl font-medium text-white transition duration-200 ease-in-out hover:bg-soft-red">
-          Read More
-        </button>
       </div>
       <img
         className="rounded-full border-[20px] border-primary-dark object-cover object-center shadow-md hover:animate-pulse md:w-1/2 lg:w-2/6"
@@ -76,3 +69,5 @@ const Hero: React.FC = () => {
 }
 
 export default Hero
+
+// mx-auto flex flex-col items-center px-5 py-12 md:flex-row lg:px-24
