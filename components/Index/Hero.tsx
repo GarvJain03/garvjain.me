@@ -54,7 +54,7 @@ const Hero: React.FC = () => {
           A creative developer who loves to write code and solve real world
           problems. I'm a currently attending{' '}
           <a className="link">Delhi Public School, RK Puram</a> as a high school
-          sophomore where I'm a part of <a className="link">Exun Clan</a>, the
+          sophomore where I am a part of <a className="link">Exun Clan</a>, the
           tech club and <a className="link">RoboKnights</a>, the robotics club
           of the school.
         </p>
