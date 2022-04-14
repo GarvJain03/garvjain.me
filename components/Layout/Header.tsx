@@ -2,6 +2,8 @@ import React from 'react'
 import Link from 'next/link'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { ImCross } from 'react-icons/im'
+import { useRouter } from 'next/router'
+
 
 const links: { name: string; url: string }[] = [
   {
@@ -17,8 +19,8 @@ const links: { name: string; url: string }[] = [
     url: '/blog',
   },
   {
-    name: 'Resume',
-    url: '/',
+    name: 'Artwork',
+    url: '/artwork',
   },
 ]
 
@@ -30,8 +32,11 @@ const Header: React.FC = () => {
     setShowNavbar(!showNavbar)
   }
 
+  const router = useRouter()
+
   return (
     <>
+    {console.log(router.pathname)}
       <header className="sticky top-0 z-50 bg-primary-dark">
         <div className="flex p-5 px-8 lg:items-center lg:px-12">
           <Link href="/">
@@ -46,18 +51,18 @@ const Header: React.FC = () => {
           <div className="hidden space-x-6 lg:mx-auto lg:flex lg:items-center">
             {links.map((link) => (
               <Link key={link.name} href={link.url}>
-                <a className="text-lg font-medium text-white">{link.name}</a>
+                <a className={`text-lg font-medium text-white ${router.pathname === `${link.url}`? "underline underline-offset-4 decoration-4": ""}`}>{link.name}</a>
               </Link>
             ))}
           </div>
           <Link href="/contact">
-            <a className="hidden border-2 border-white px-4 py-3 text-lg font-medium text-white transition duration-200 ease-in-out hover:bg-white hover:text-primary-dark lg:block">
+            <a className={`hidden border-2 border-white px-4 py-3 text-lg font-medium text-white transition duration-200 ease-in-out hover:bg-white hover:text-primary-dark lg:block ${router.pathname === "/contact"? "bg-white text-primary-dark": ""}`}>
               Contact Me
             </a>
           </Link>
         </div>
         {showNavbar && (
-          <div className="flex flex-col space-y-1 bg-primary-dark py-5 px-4">
+          <div className="flex flex-col space-y-1 bg-primary-dark py-5 px-4 transition duration-200 ease-in-out lg:hidden">
             {links.map((link) => (
               <Link href={link.url} key={link.name}>
                 <a className="rounded-md p-4 text-2xl font-medium text-white hover:bg-secondary-dark">
