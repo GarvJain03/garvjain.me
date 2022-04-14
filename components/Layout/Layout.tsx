@@ -12,6 +12,7 @@ const Layout: React.FC<ILayoutProps> = ({ children, title }: ILayoutProps) => {
     <>
       <Head>
         <title>{title} | Garv Jain</title>
+        <meta name="description" content="Garv Jain's personal website" />
       </Head>
       <Header />
       {children}
