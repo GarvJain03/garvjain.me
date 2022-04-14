@@ -22,7 +22,7 @@ const socials: { icon: React.ReactFragment; url: string }[] = [
   },
   {
     icon: <FaInstagram />,
-    url: 'https://www.instagram.com/_garv03/',
+    url: 'https://www.instagram.com/garvjain03/',
   },
   {
     icon: <FaDiscord />,
