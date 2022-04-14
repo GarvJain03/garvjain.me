@@ -11,12 +11,15 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-icons": "^4.3.1",
+    "react-scroll": "^1.8.7",
     "react-toastify": "^8.2.0",
     "tiny-invariant": "^1.2.0"
   },
   "devDependencies": {
     "@types/node": "17.0.4",
     "@types/react": "17.0.38",
+    "@types/react-icons": "^3.0.0",
+    "@types/react-scroll": "^1.8.3",
     "autoprefixer": "^10.4.0",
     "postcss": "^8.4.5",
     "prettier": "^2.5.1",
