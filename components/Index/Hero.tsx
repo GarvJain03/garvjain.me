@@ -53,10 +53,18 @@ const Hero: React.FC = () => {
         <p className="mt-4 text-justify text-xl leading-8 text-gray-400">
           A creative developer who loves to write code and solve real world
           problems. I'm a currently attending{' '}
-          <a className="link">Delhi Public School, RK Puram</a> as a high school
-          sophomore where I am a part of <a className="link">Exun Clan</a>, the
-          tech club and <a className="link">RoboKnights</a>, the robotics club
-          of the school.
+          <a href="//dpsrkp.net" target={`_blank`} className="link">
+            Delhi Public School, RK Puram
+          </a>{' '}
+          as a high school sophomore where I am a part of{' '}
+          <a href="//exunclan.com" target={`_blank`} className="link">
+            Exun Clan
+          </a>
+          , the tech club and{' '}
+          <a href="//roboknights.in" target={`_blank`} className="link">
+            RoboKnights
+          </a>
+          , the robotics club of the school.
         </p>
       </div>
       <img
