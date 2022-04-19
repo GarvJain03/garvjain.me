@@ -32,7 +32,7 @@ const socials: { icon: React.ReactFragment; url: string }[] = [
 
 const Hero: React.FC = () => {
   return (
-    <div className=" mx-auto flex flex-col items-center px-5 pt-12 md:flex-row lg:px-24">
+    <div className=" mx-auto flex flex-col items-center px-5 py-12 md:flex-row lg:px-24">
       <div className="mb-16 flex flex-col items-center text-center md:mb-0 md:w-1/2 md:items-start md:pr-16 md:text-left lg:flex-grow lg:pr-24">
         <div className="mb-8 flex flex-row space-x-3">
           {socials.map((social, index) => (
