@@ -51,8 +51,7 @@ const Hero: React.FC = () => {
         </h2>
 
         <p className="mt-4 text-justify text-xl leading-8 text-gray-400">
-          A creative developer who loves to write code and solve real world
-          problems. I'm a currently attending{' '}
+          A 3D artist passionate about animation and stylized art. I'm a currently attending{' '}
           <a href="//dpsrkp.net" target={`_blank`} className="link">
             Delhi Public School, RK Puram
           </a>{' '}
