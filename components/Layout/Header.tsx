@@ -11,10 +11,6 @@ const links: { name: string; url: string }[] = [
     url: '/',
   },
   {
-    name: 'Projects',
-    url: '/projects',
-  },
-  {
     name: 'Blog',
     url: '/blog',
   },
