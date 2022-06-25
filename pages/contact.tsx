@@ -14,7 +14,7 @@ const ContactPage: NextPage = () => {
             Have Any Questions?
           </h1>
           <p className="mx-auto text-xl leading-relaxed text-gray-400 lg:w-2/3 lg:px-24">
-            Want to collaborate on any project or participate in a hackathon?
+            Want to collaborate on any project?
             Feel free to contact me using the form below.
           </p>
         </div>
